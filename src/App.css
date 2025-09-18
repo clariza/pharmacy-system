@@ -1,38 +1,189 @@
+@import '~antd/dist/reset.css';
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.page-header-container {
+  margin: 10px 0px;
+  border: 1px solid #e8e8e8;
+  border-radius: 7px;
+}
+
+/* NUEVO: Contenedor principal del header para layout horizontal */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #001529;
+  padding: 0;
+  height: 64px; /* Altura estándar de Ant Design */
+}
+
+/* MODIFICADO: Logo link sin float */
+.logo-link {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 12px;
+  height: 100%;
+}
+
+/* MODIFICADO: Logo sin float y con mejor alineación */
+.logo {
+  width: 209px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  color: azure;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.logo .title {
+  font-size: 12pt;
+  font-weight: 200;
+  margin: 0;
+}
+
+.logo .subtitle {
+  font-size: 12pt;
+  color: rgba(0, 255, 255, 0.45);
+  margin: 0;
+}
+
+/* NUEVO: Estilos para el menú en el header */
+.header-menu {
+  background: transparent !important;
+  border-bottom: none !important;
+  line-height: 64px;
+  margin-right: 16px;
+}
+
+/* Asegurar que el menú mantenga el tema dark */
+.header-menu.ant-menu-dark {
+  background: transparent;
+}
+
+/* Ajustar el submenu */
+.header-menu .ant-menu-submenu {
+  border-bottom: none !important;
+}
+
+/* Resto de los estilos originales sin cambios */
+.ant-layout-sider-children .ant-menu > :first-child {
+  margin-top: 0px;
+}
+
+.main-container-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container-app .login-form {
+  margin-top: 30px;
+  max-width: 300px;
+}
+
+.main-container-app .login-form-forgot {
+  float: right;
+}
+
+.main-container-app .login-form-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.signup-logo-container {
+  border-radius: 5px;
+  margin: 8px 20px 0px 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #001529;
+  padding: 10px;
+}
+
+.signup-logo-container div {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  line-height: 30px;
+  text-align: center;
+}
+
+.signup-title {
+  font-size: 14pt;
+  margin-right: 5px;
+  font-weight: 200;
+  color: azure;
+}
+
+.signup-subtitle {
+  font-size: 12pt;
+  color: rgba(0, 255, 255, 0.45);
+}
+
+.forgot-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.logo-image {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-right: 90px;
+  margin-bottom: 20px;
+}
+
+.container-logo-image {
+  text-align: left;
+}
+
+.container-logo-image p {
+  font-size: 28px;
 }
