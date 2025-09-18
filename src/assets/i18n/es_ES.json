@@ -1,0 +1,32 @@
+{
+  "SIGNIN": {
+    "BUTTONS": {
+      "LOGIN": "Acceder",
+      "REMEMBER_ME": "Recuerdame",
+      "FORGOT_PASSWORD": "Olvido su contraseña"
+    },
+    "SPINNER": "Cargando...",
+    "INPUTS": {
+      "USERNAME": "Nombre de usuario",
+      "VALIDATION_USERNAME": "Por favor ingrese un nombre de usuario válido.",
+      "PASSWORD": "Contraseña",
+      "VALIDATION_PASSWORD": "Contraseña es requerida"
+    },
+    "MESSAGES": {
+      "SUCCESS": "Acceso concedido satisfactoriamente",
+      "INVALID": "Usuario o contraseña inválida",
+      "FAIL_SERVER": "Fallo al conectarse al servidor"
+    }
+  },
+  "RE_ESTABLISH_PASSWORD": {
+    "TITLE": "Olvido su contraseña?",
+    "CONTENT": "No se preocupe. Reestablecer su contraseña es sencillo, ingrese su dirección de correo electrónico.",
+    "BUTTONS": {
+      "SEND": "Enviar"
+    },
+    "INPUTS": {
+      "EMAIL": "Correo electrónico",
+      "VALIDATION_EMAIL": "Por favor ingrese un correo electrónico válido."
+    }
+  }
+}
